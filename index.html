@@ -3,11 +3,571 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meshack Kimoloi</title>
+    <title>Kipchirchir Kimoloi</title>
+    <meta name="description" content="Personal portfolio website showcasing projects, skills, and experience of Meshack Kipchirchir Kimoloi.">
+    <meta name="keywords" content="Meshack Kipchirchir Kimoloi, Portfolio, Web Developer, Frontend, Backend, Next,AWS">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
-    <div>
-        <h1>lets Go🚀</h1>
+<body class="preload"> <!-- Initial class for preloader -->
+
+    <div id="preloader">
+        <div class="loader"></div>
     </div>
+
+    <div id="overlay"></div>
+
+    <aside id="sidebar">
+        <h2>Chirchir.dev</h2>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#hero" class="nav-link"><i class="fas fa-home fa-fw"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user fa-fw"></i> <span>About</span></a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase fa-fw"></i> <span>Experience</span></a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap fa-fw"></i> <span>Education</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-layer-group fa-fw"></i> <span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram fa-fw"></i> <span>Projects</span></a></li>
+                <li><a href="#interests" class="nav-link"><i class="fas fa-heart fa-fw"></i> <span>Interests</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope fa-fw"></i> <span>Contact</span></a></li>
+                <li><a href="blog.html" class="nav-link"><i class="fas fa-book-open fa-fw"></i> <span>Blog</span></a></li> <!-- Added Blog Link -->
+            </ul>
+        </nav>
+    </aside>
+
+    <button id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <main id="main-content">
+
+        <section id="hero" class="section hero-section" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <p class="intro-text">Hey! <span class="waving-hand">👋</span> I'm</p>
+                    <h1 id="hero-heading" class="name-gradient">Kipchirchir Meshack</h1>
+                    <!-- Updated Subtitle structure for Typing Effect -->
+                    <p class="subtitle">I'm a <span class="typing-effect" data-words='["Full-Stack Developer", "Problem-solver", "Tech Enthusiast", "Cloud-Engineer", "DevOps Engineer", "Lifelong Learner"]'></span></p>
+
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-phone-alt fa-fw"></i>
+                            <a href="tel:+254708917068" class="contact-link">+254-708 917 068</a>
+                         </p>
+                         <p>
+                            <i class="fas fa-envelope fa-fw"></i>
+                            <a href="mailto:chirchirMeshack20@gmail.com" class="contact-link">chirchirMeshack20@gmail.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Nairobi,Kenya" target="_blank" class="contact-link">Nairobi, Kenya</a>
+                        </p>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <!-- Update href to your actual resume file -->
+                        <a href="assets/Mr.Meshack Kimoloi Cv.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Cv
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Let's Chat
+                        </a>
+                    </div>
+
+                    <div class="hero-social-links">
+                         <!-- Replace # with your actual profile URLs -->
+                        <a href="https://www.linkedin.com/in/meshack-kipchirchir-5201252a9/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ChirchirMeshack" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/chirchir69" target="_blank" aria-label="X (Twitter) Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="hero-image-container" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-image-backdrop">
+                        <!-- Background Abstract Circles -->
+                        <span class="bg-circle circle-1"></span>
+                        <span class="bg-circle circle-2"></span>
+                        <span class="bg-circle circle-3"></span>
+                        <span class="bg-circle circle-4"></span>
+                        <span class="bg-circle circle-5"></span>
+                    </div>
+                    <!-- TODO: Replace with actual photo -->
+                    <img src="images/hero-image.jpg" alt="Kipchirchir" class="hero-main-image" width="400" height="400" loading="eager">
+                </div>
+            </div>
+
+            <!-- Scroll Down Arrow -->
+            <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-heading" data-aos="fade-up">
+            <h2 id="about-heading">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <!-- smaller headshot -->
+                    <img src="images/headshot.jpg" alt="Kipchrchir" width="200" height="200" loading="lazy">
+                </div>
+                <div class="about-text content-card">
+                    <h3>Hey there! I'm Meshack Kipchirchir</h3>
+                    <p>Think of me as your friendly neighbourhood tech enthusiast, turning caffeine into code and complex problems into elegant solutions. I thrive on diving into the worlds of cloud computing, software development, and networking – basically, making technology do cool things!</p>
+                    <p>Armed with a Computer Science degree from KCA University (Class of '23!), AWS & Cisco certs, and real-world experience from helpdesks to network setups, I've been busy translating theory into practice. My journey has taken me through the IT landscapes of Moi University and Reale Hospital.</p> <p>Lately, I'm buzzing about cloud tech and crafting smooth user experiences with React & Node.js. My mission? To build robust, innovative solutions that make a real difference. Check out my projects below, and if you think we could create something awesome together, let's chat</p> <a href="https://www.linkedin.com/in/meshack-kipchirchir-5201252a9/" target="_blank" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section timeline-section" aria-labelledby="experience-heading" data-aos="fade-up">
+            <h2 id="experience-heading">Work Experience</h2>
+            <div class="timeline modern-timeline">
+                <!-- Work experience 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-logo">
+                            <!-- company logos -->
+                            <img src="images/company-logo-1.png" alt="Company 1 Logo" loading="lazy" width="70" height="70">
+                        </div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="timeline-info">
+                            <div class="info-main">
+                                <h3>Reale Hospital Utawala</h3>
+                                <h4>IT technician</h4>
+                            </div>
+                            <span class="info-date">05/2024 - 08/2024</span>
+                            <button class="details-toggle" aria-expanded="false" aria-controls="details-work-1" aria-label="Toggle work details">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="timeline-details" id="details-work-1">
+                            <h5>Key Duties:</h5>
+                            <ul>
+                                <li>Troubleshooted and resolved a variety of software and hardware issues encountered by hospital staff, ensuring efficient operation of critical
+                                    medical equipment. </li> <li>Implemented a preventative maintenance schedule for network devices, reducing downtime by 15%.</li> <li>Provided first-line help desk support to staff via phone and email, resolving over 80% of user inquiries within 24 hours. </li> <li>Developed and maintained a comprehensive data organization system, facilitating efficient data retrieval and analysis. </li> <li>Assisted in the installation and configuration of new software applications, ensuring compatibility with existing systems.</li>
+                                <li>Conducted training sessions for staff on new software applications and IT best practices, enhancing overall team productivity.</li>
+                                <Li>Assisted with implementing new data security protocols, ensuring compliance with HIPAA regulations.</Li> <li>Developed and maintained an asset inventory system for all IT equipment, including detailed records of each device's specifications,
+                                    maintenance history, and location, facilitating efficient equipment tracking and deployment</li> </ul>
+                        </div>
+                    </div>
+                </div> <!-- end of Work experience 1 -->
+
+             <!-- Work experience 2 -->
+                 <div class="timeline-item" data-aos="fade-up">
+                     <div class="timeline-marker">
+                        <div class="timeline-logo">
+                            <img src="images/company-logo-2.png" alt="Company 2 Logo" loading="lazy" width="70" height="70">
+                        </div>
+                    </div>
+                     <div class="timeline-item-content">
+                        <div class="timeline-info">
+                            <div class="info-main">
+                                <h3>Moi University,College of Health Sciences</h3>
+                                <h4>IT Technician</h4>
+                            </div>
+                            <span class="info-date">09/2023 - 12/2023</span>
+                            <button class="details-toggle" aria-expanded="false" aria-controls="details-work-2" aria-label="Toggle work details">
+                                 <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="timeline-details" id="details-work-2">
+                             <h5>Key Duties:</h5>
+                            <ul>
+                                <li>Assisted with network maintenance and structured cabling projects, contributing to a stable and efficient network infrastructure for over
+                                    1,000 users at the university.</li> <li>Performed regular data backups ensuring critical university information like student records and research data is safeguarded and
+                                    minimizing data loss risks.</li> <li>Supported the successful implementation of the university email server migration project by configuring user accounts and ensuring
+                                    smooth data transfer.</li> <li>Technical Support: Provided first-line technical support to over 100 students and staff via phone and email, resolving over 75% of software
+                                    issues within a 24-hour timeframe, utilizing my proficiency in Ms Office Suite and troubleshooting common software installation and
+                                    configuration problems.</li> </ul>
+                        </div>
+                    </div>
+                </div> <!-- end of Work experience 2 -->
+
+            </div>
+        </section>
+
+        <section id="education" class="section timeline-section" aria-labelledby="education-heading" data-aos="fade-up">
+            <h2 id="education-heading">Education</h2>
+            <div class="timeline modern-timeline">
+
+                <!-- Education 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                         <div class="timeline-logo">
+                            <!-- TODOs Replace with school logo -->
+                            <img src="images/school-logo-1.png" alt="School 1 Logo" loading="lazy" width="70" height="70">
+                        </div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="timeline-info">
+                            <div class="info-main">
+                                <h3>Emobilis</h3>
+                                <h4>AWS cloud practitioner</h4>
+                            </div>
+                            <span class="info-date">03/2024</span>
+
+                            <a href="https://www.credly.com/badges/8982693c-f3dc-485a-912d-84e5d8bd03e0" target="_blank" class="school-link" aria-label="Visit Credly Link">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                         <div class="timeline-notes">
+                            <p>Relevant coursework: Cloud Computing, Networking, Software Development. Minor in Information Systems. Honors: AWS Certified Cloud Practitioner.</p> </div>
+                    </div>
+                </div> <!-- end of Education 1 -->
+
+                <!-- Education 2 -->
+                 <div class="timeline-item" data-aos="fade-up">
+                     <div class="timeline-marker">
+                         <div class="timeline-logo">
+                            <img src="images/school-logo-2.png" alt="School 2 Logo" loading="lazy" width="70" height="70">
+                        </div>
+                    </div>
+                     <div class="timeline-item-content">
+                        <div class="timeline-info">
+                            <div class="info-main">
+                                <h3>KCA University</h3>
+                                <h4>Bachelor of Science in Applied Computing</h4>
+                            </div>
+                            <span class="info-date">2019-2023</span>
+                             <a href="https://www.kca.ac.ke" target="_blank" class="school-link" aria-label="Visit KCA University Website">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                         <div class="timeline-notes">
+                            <p>Key skill acquired: Software Development, Database Management.</p> </div>
+                    </div>
+                </div> <!-- end of Education 2 -->
+
+                  <!-- Education 3 -->
+                  <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="timeline-logo">
+                           <img src="images/school-logo-2.png" alt="School 2 Logo" loading="lazy" width="70" height="70">
+                       </div>
+                   </div>
+                    <div class="timeline-item-content">
+                       <div class="timeline-info">
+                           <div class="info-main">
+                               <h3>KCA University</h3>
+                               <h4>Cisco Certified Network Associate</h4>
+                           </div>
+                           <span class="info-date">2022-2023</span>
+                            <a href="https://www.credly.com/badges/170ed8b4-2dab-4973-a1d2-95d7309e7533" target="_blank" class="school-link" aria-label="Visit Credly Link">
+                               <i class="fas fa-chevron-right"></i>
+                           </a>
+                       </div>
+                        <div class="timeline-notes">
+                           <p>Key skill acquired: Networking, Network Security.</p> </div>
+                   </div>
+               </div> <!-- end of Education 3 -->
+
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section" aria-labelledby="skills-heading" data-aos="fade-up">
+            <h2 id="skills-heading"><i class="fas fa-layer-group"></i> MY STACK</h2>
+
+            <!--FRONTEND-->
+            <div class="skill-domain" data-aos="fade-up">
+                <div class="skill-domain-title">
+                    <h3>FRONTEND</h3>
+                </div>
+                <div class="skill-items-grid">
+                <!-- Add skill items - remember to add logos to images/logos/ -->
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo" loading="lazy" width="28" height="28"/><span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                        alt="TypeScript Logo" loading="lazy" width="28" height="28"><span>TypeScript</span></div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+                        alt="React Logo" loading="lazy" width="28" height="28"><span>React</span></div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                        alt="Next.js Logo" loading="lazy" width="28" height="28"><span>NextJs</span></div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                        alt="Redux Logo" loading="lazy" width="28" height="28"><span>Redux</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5 Logo" loading="lazy" width="28" height="28"><span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="CSS3 Logo" loading="lazy" width="28" height="28"><span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                        alt="Tailwind CSS Logo" loading="lazy" width="28" height="28"><span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg"
+                        alt="Framer Motion Logo" loading="lazy" width="28" height="28"><span>Framer Motion</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--BACKEND: Technologies used in backend development.-->
+             <div class="skill-domain" data-aos="fade-up">
+                <div class="skill-domain-title">
+                    <h3>BACKEND</h3>
+                </div>
+                <div class="skill-items-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js Logo" loading="lazy" width="28" height="28"><span>Node.js</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                        alt="MongoDB Logo" loading="lazy" width="28" height="28"><span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL Logo" loading="lazy" width="28" height="28"><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase Logo" loading="lazy" width="28" height="28"><span>Firebase</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        alt="MySQL Logo" loading="lazy" width="28" height="28"><span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired fa-fw"></i><span>REST APIs</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-project-diagram fa-fw"></i><span>System Design</span>
+                    </div>
+                </div>
+            </div>
+
+             <!--Tools & Platforms Domain -->
+             <div class="skill-domain" data-aos="fade-up">
+                <div class="skill-domain-title">
+                    <h3>TOOLS</h3>
+                </div>
+                <div class="skill-items-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        alt="Git Logo" loading="lazy" width="28" height="28"><span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub Logo" loading="lazy" width="28" height="28"><span>GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VS Code Logo" loading="lazy" width="28" height="28"><span>VS Code</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        alt="Figma Logo" loading="lazy" width="28" height="28"><span>Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman Logo" loading="lazy" width="28" height="28"><span>Postman</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+                        alt="Vercel Logo" loading="lazy" width="28" height="28"><span>Vercel</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg"
+                        alt="Expo Logo" loading="lazy" width="28" height="28"><span>Expo</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-aws fa-fw"></i><span>AWS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-linux fa-fw"></i><span>Linux/Unix</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-heading" data-aos="fade-up">
+            <h2 id="projects-heading">My Projects</h2>
+            <div class="projects-container">
+
+                <!-- Project Card 1-->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                     <!-- TODOs replace images-->
+                    <img src="images/WashlyticsDash.jpg" alt="Screenshot of Project 1" loading="lazy" width="400" height="250">
+                    <div class="project-info">
+                        <h3>Washlytics | Making Car Washes Sparkle (Digitally!)</h3>
+                        <p>Challenge: Car washes juggling appointments and customer info manually. Solution: Washlytics! I built this full-stack system using Next.js & TypeScript (frontend magic by TailwindCSS & Framer Motion!) and a robust backend (Supabase & REST APIs) to automate bookings, track customers, and streamline the whole operation. Result: Less paperwork, happier managers!</p>
+                        <div class="project-tags">
+                            <span>Next</span><span>Typescript</span><span>Supabase</span><span>Framer Motion</span><span>TailwindCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODOs Update links -->
+                            <a href="#" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 1"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="btn-icon" aria-label="View Code for Project 1"><i class="fab fa-github"></i> Code</a>
+                            <a href="#project-details-1" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Project Card 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/portfolio.jpg" alt="Screenshot of Project 2" loading="lazy" width="400" height="250">
+                     <div class="project-info">
+                        <h3>Kipchirchir Kimoloi | Portfolio Website</h3>
+                        <p>Meta, right? You're looking at it! I built this portfolio to showcase my journey, skills, and projects (like this one!). Crafted with clean HTML, stylish CSS (Tailwind's helping!), and a sprinkle of interactive JavaScript, all designed to look great on any device. It’s my little corner of the web.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 2"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank" class="btn-icon" aria-label="View Code for Project 2"><i class="fab fa-github"></i> Code</a>
+                            <a href="#project-details-2" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="interests" class="section interests-section" aria-labelledby="interests-heading" data-aos="fade-up">
+            <h2 id="interests-heading">Beyond the Code</h2>
+            <p>When I'm not building things for the web, you can find me exploring:</p>
+            <ul class="interests-list content-card">
+                <li><i class="fas fa-hiking fa-fw"></i> Hiking & Outdoors</li>
+                <li><i class="fas fa-book-open fa-fw"></i> Reading Novels</li>
+                <li><i class="fas fa-music fa-fw"></i> Listening to trending Music</li>
+                <li><i class="fas fa-futbol fa-fw"></i> Football</li>
+                <li><i class="fas fa-tv fa-fw"></i> Catching on my Favourite TV Shows & Anime</li>
+                <li><i class="fas fa-brain fa-fw"></i> Learning New Skills</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+            <div class="contact-container">
+
+                <div class="contact-info-column" data-aos="fade-right">
+                    <h2 id="contact-heading">Let's Connect</h2>
+                    <p class="contact-pitch">
+                        Got a project brewing, a cool idea simmering, or an opportunity you think I'd dig? I'm all ears and excited to hear about your vision!
+                    </p>
+                    <ul class="contact-details-list">
+                        <li>
+                            <a href="mailto:chirchirMeshack20@gmail.com">
+                                <i class="fas fa-envelope fa-fw"></i> chirchirMeshack20@gmail.com
+                            </a>
+                        </li>
+                         <li>
+                            <a href="https://github.com/chirchirmeshack" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github fa-fw"></i> github.com/chirchirmeshack
+                            </a>
+                        </li>
+                        <li>
+                             <a href="https://www.linkedin.com/in/meshack-kipchirchir-5201252a9/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin fa-fw"></i> LinkedIn
+                            </a>
+                        </li>
+                         </ul>
+                </div>
+
+                <div class="contact-form-column" data-aos="fade-left" data-aos-delay="100">
+                    <!-- Netlify Form Integration -->
+                    <form id="contact-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <!-- Hidden input for Netlify form name -->
+                        <input type="hidden" name="form-name" value="portfolio-contact" />
+
+                        <!-- Honeypot field (hidden) -->
+                        <p class="hidden" style="display: none;">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required aria-required="true"></textarea>
+                        </div>
+
+                        <!-- Optional: Add Netlify reCAPTCHA div here if enabled -->
+                        <!-- <div data-netlify-recaptcha="true"></div> -->
+
+                        <div class="form-submit-area">
+                            <button type="submit" class="btn btn-primary" id="contact-submit">
+                                Send Message <i class="fas fa-paper-plane"></i> </button>
+                            <div id="form-status" role="status" aria-live="polite" class="form-status-message"></div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            </section>
+
+    </main>
+
+    <footer id="bottom-nav" role="navigation" aria-label="Footer Navigation">
+        <!-- Home -->
+        <div class="nav-item">
+            <a href="#hero" aria-label="Home" data-tooltip="Home" class="nav-link">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        <!-- Blog -->
+        <div class="nav-item">
+           <a href="blog.html" aria-label="Blog" data-tooltip="Blog" class="nav-link">
+               <i class="fas fa-book-open"></i>
+           </a>
+       </div>
+        <!-- github -->
+        <div class="nav-item nav-item-center">
+            <a href="https://github.com/ChirchirMeshack" target="_blank" aria-label="GitHub Profile" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="nav-item">
+            <a href="https://www.linkedin.com/in/meshack-kipchirchir-5201252a9/" target="_blank" aria-label="LinkedIn Profile" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <!-- X -->
+        <div class="nav-item">
+            <a href="https://x.com/chirchir69" target="_blank" aria-label="X Profile" data-tooltip="X">
+                 <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+        <!-- Dark Mode Toggle -->
+        <div class="nav-item">
+             <button id="dark-mode-toggle" aria-label="Toggle Theme" data-tooltip="Theme">
+                 <i class="fas fa-moon"></i>
+             </button>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
