@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kipchirchir Kimoloi</title>
     <meta name="description" content="Personal portfolio website showcasing projects, skills, and experience of Meshack Kipchirchir Kimoloi.">
-    <meta name="keywords" content="Meshack Kipchirchir Kimoloi, Portfolio, Web Developer, Frontend, Backend, Next,AWS">
+    <meta name="keywords" content="Meshack Kipchirchir Kimoloi, Portfolio, Web Developer, Frontend, Backend, Next, AWS">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-
-
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 </head>
 <body class="preload"> <!-- Initial class for preloader -->
 
@@ -28,7 +22,10 @@
     <div id="overlay"></div>
 
     <aside id="sidebar">
-        <h2>Chirchir.dev</h2>
+        <h2>
+            <img src="images/favicon.ico" alt="Chirchir.dev Logo" width="24" height="24">
+            Chirchir.dev
+        </h2>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#hero" class="nav-link"><i class="fas fa-home fa-fw"></i> <span>Home</span></a></li>
@@ -39,9 +36,14 @@
                 <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram fa-fw"></i> <span>Projects</span></a></li>
                 <li><a href="#interests" class="nav-link"><i class="fas fa-heart fa-fw"></i> <span>Interests</span></a></li>
                 <li><a href="#contact" class="nav-link"><i class="fas fa-envelope fa-fw"></i> <span>Contact</span></a></li>
-                <li><a href="blog.html" class="nav-link"><i class="fas fa-book-open fa-fw"></i> <span>Blog</span></a></li> <!-- Added Blog Link -->
+                <li><a href="blog.html" class="nav-link"><i class="fas fa-book-open fa-fw"></i> <span>Blog</span></a></li>
             </ul>
         </nav>
+
+        <!-- Copyright Notice -->
+        <div class="sidebar-footer">
+            <p>&copy; <span id="copyright-year"></span> Chirchir.dev. All rights reserved.</p>
+        </div>
     </aside>
 
     <button id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
@@ -417,9 +419,9 @@
                         </div>
                         <div class="project-links">
                             <!-- TODOs Update links -->
-                            <a href="#" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 1"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" target="_blank" class="btn-icon" aria-label="View Code for Project 1"><i class="fab fa-github"></i> Code</a>
-                            <a href="#project-details-1" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
+                            <a href="https://washlytics-gtc3-43dllu51m-ivanvicker5184-gmailcoms-projects.vercel.app/" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 1"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ChirchirMeshack/Washlytics.git" target="_blank" class="btn-icon" aria-label="View Code for Project 1"><i class="fab fa-github"></i> Code</a>
+                            <a href="/project-details-1.html" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -429,14 +431,14 @@
                     <img src="images/portfolio.jpg" alt="Screenshot of Project 2" loading="lazy" width="400" height="250">
                      <div class="project-info">
                         <h3>Kipchirchir Kimoloi | Portfolio Website</h3>
-                        <p>Meta, right? You're looking at it! I built this portfolio to showcase my journey, skills, and projects (like this one!). Crafted with clean HTML, stylish CSS (Tailwind's helping!), and a sprinkle of interactive JavaScript, all designed to look great on any device. It’s my little corner of the web.</p>
+                        <p>DeJaVu, right? You're looking at it! I built this portfolio to showcase my journey, skills, and projects (like this one!). Crafted with clean HTML, stylish CSS , and a sprinkle of interactive JavaScript, all designed to look great on any device. It’s my little corner of the web.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 2"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" target="_blank" class="btn-icon" aria-label="View Code for Project 2"><i class="fab fa-github"></i> Code</a>
-                            <a href="#project-details-2" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
+                            <a href="https://kipchirchirmeshack.netlify.app/" target="_blank" class="btn-icon" aria-label="View Live Demo of Project 2"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/ChirchirMeshack/HackathonPortfolio.git" target="_blank" class="btn-icon" aria-label="View Code for Project 2"><i class="fab fa-github"></i> Code</a>
+                            <a href="/project-details-2.html" class="btn btn-secondary btn-small learn-more-btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -448,14 +450,13 @@
 
         <section id="interests" class="section interests-section" aria-labelledby="interests-heading" data-aos="fade-up">
             <h2 id="interests-heading">Beyond the Code</h2>
-            <p>When I'm not building things for the web, you can find me exploring:</p>
-            <ul class="interests-list content-card">
-                <li><i class="fas fa-hiking fa-fw"></i> Hiking & Outdoors</li>
-                <li><i class="fas fa-book-open fa-fw"></i> Reading Novels</li>
-                <li><i class="fas fa-music fa-fw"></i> Listening to trending Music</li>
-                <li><i class="fas fa-futbol fa-fw"></i> Football</li>
-                <li><i class="fas fa-tv fa-fw"></i> Catching on my Favourite TV Shows & Anime</li>
-                <li><i class="fas fa-brain fa-fw"></i> Learning New Skills</li>
+           <ul class="interests-list content-card">
+                <li><i class="fas fa-cloud fa-fw"></i>Cloud Computing</li>
+                <li><i class="fas fa-code fa-fw"></i>Full-Stack Development</li>
+                <li><i class="fas fa-network-wired fa-fw"></i>Networking & Security</li>
+                <li><i class="fas fa-lightbulb fa-fw"></i>Problem Solving</li>
+                <li><i class="fas fa-robot fa-fw"></i>Artificial Intelligence</li>
+                <li><i class="fas fa-brain fa-fw"></i>Continuous Learning</li>
             </ul>
         </section>
 
@@ -487,15 +488,15 @@
                 </div>
 
                 <div class="contact-form-column" data-aos="fade-left" data-aos-delay="100">
-                    <!-- Netlify Form Integration -->
-                    <form id="contact-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <!-- Hidden input for Netlify form name -->
-                        <input type="hidden" name="form-name" value="portfolio-contact" />
-
+                    <!-- Formspree Integration -->
+                    <form id="contact-form" action="https://formspree.io/f/xzzejver" method="POST">
                         <!-- Honeypot field (hidden) -->
                         <p class="hidden" style="display: none;">
-                            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                            <label>Don’t fill this out if you’re human: <input name="_gotcha"></label>
                         </p>
+
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_redirect" value="/thank-you.html">
 
                         <div class="form-group">
                             <label for="name">Name:</label>
@@ -510,24 +511,22 @@
                             <textarea id="message" name="message" rows="5" placeholder="Enter your message" required aria-required="true"></textarea>
                         </div>
 
-                        <!-- Optional: Add Netlify reCAPTCHA div here if enabled -->
-                        <!-- <div data-netlify-recaptcha="true"></div> -->
-
                         <div class="form-submit-area">
                             <button type="submit" class="btn btn-primary" id="contact-submit">
-                                Send Message <i class="fas fa-paper-plane"></i> </button>
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
                             <div id="form-status" role="status" aria-live="polite" class="form-status-message"></div>
                         </div>
                     </form>
                 </div>
 
             </div>
-            </section>
+        </section>
 
     </main>
 
     <footer id="bottom-nav" role="navigation" aria-label="Footer Navigation">
-        <!-- Home -->
+        <!-- Footer Navigation Links -->
         <div class="nav-item">
             <a href="#hero" aria-label="Home" data-tooltip="Home" class="nav-link">
                 <i class="fas fa-home"></i>
@@ -535,10 +534,10 @@
         </div>
         <!-- Blog -->
         <div class="nav-item">
-           <a href="blog.html" aria-label="Blog" data-tooltip="Blog" class="nav-link">
-               <i class="fas fa-book-open"></i>
-           </a>
-       </div>
+            <a href="blog.html" aria-label="Blog" data-tooltip="Blog" class="nav-link">
+                <i class="fas fa-book-open"></i>
+            </a>
+        </div>
         <!-- github -->
         <div class="nav-item nav-item-center">
             <a href="https://github.com/ChirchirMeshack" target="_blank" aria-label="GitHub Profile" data-tooltip="GitHub">
@@ -554,19 +553,18 @@
         <!-- X -->
         <div class="nav-item">
             <a href="https://x.com/chirchir69" target="_blank" aria-label="X Profile" data-tooltip="X">
-                 <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
             </a>
         </div>
         <!-- Dark Mode Toggle -->
         <div class="nav-item">
-             <button id="dark-mode-toggle" aria-label="Toggle Theme" data-tooltip="Theme">
-                 <i class="fas fa-moon"></i>
-             </button>
+            <button id="dark-mode-toggle" aria-label="Toggle Theme" data-tooltip="Theme">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script src="js/script.js"></script>
 
 </body>

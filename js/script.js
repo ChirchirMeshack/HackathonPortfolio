@@ -257,35 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupTimelineToggle();
 
 
-    // --- 7. Contact Form Handling (Frontend Feedback for Netlify) ---
-    function setupContactForm() {
-        if (!contactForm) return;
-
-        contactForm.addEventListener('submit', (e) => {
-            // Prevent default submission IF using fetch to submit (not needed for standard Netlify handling)
-            // e.preventDefault(); // Keep commented out for default Netlify behavior
-
-            // Basic feedback - Netlify handles the actual submission & redirect/message
-            if (contactSubmitButton) contactSubmitButton.disabled = true;
-            if (formStatus) {
-                formStatus.textContent = 'Sending...';
-                formStatus.className = 'form-status-message visible status-sending';
-            }
-
-            // Allow the form to submit normally to Netlify
-            // If you were using fetch(), the logic would go here.
-            // For Netlify's default handling, we just provide temporary feedback.
-            // You might want to clear the status message after a short delay,
-            // but Netlify usually redirects to a success page.
-             setTimeout(() => {
-                 if (contactSubmitButton) contactSubmitButton.disabled = false; // Re-enable after delay
-                 // You might hide the status message here if Netlify doesn't redirect
-                 // if (formStatus) formStatus.className = 'form-status-message';
-             }, 3000); // Example: Re-enable button after 3 seconds
-        });
-    }
-    setupContactForm();
-
 
     // --- 8. Scroll Animation Initialization (AOS) ---
     function initializeAOS() {
@@ -354,5 +325,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(resizeDebounceTimeout);
         resizeDebounceTimeout = setTimeout(checkScreenSizeAndApplyLayout, 150); // Debounce resize checks
     });
+
+    // --- 10. Footer Year Update ---
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
 
 }); // End DOMContentLoaded

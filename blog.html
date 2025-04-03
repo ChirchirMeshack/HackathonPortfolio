@@ -5,52 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Coming Soon</title>
     <meta name="description" content="Blog page for [Your Name]'s portfolio - content coming soon.">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-<body class="preload"> {/* Add preload class */}
+</head>
+<body class="preload"> <!-- Add preload class for preloader -->
 
+    <!-- Preloader -->
     <div id="preloader">
         <div class="yin-yang"></div>
     </div>
 
-     {/* Include if sidebar is desired here, otherwise remove toggle & sidebar */}
-     <button id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
+    <div id="overlay"></div>
+
+    <!-- Sidebar Toggle Button -->
+    <button id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
         <i class="fas fa-bars"></i>
     </button>
 
-    {/* Include if consistent navigation is desired, otherwise remove */}
+    <!-- Sidebar Navigation -->
     <aside id="sidebar">
         <nav aria-label="Main Navigation">
-             <ul>
-                 <li><a href="index.html#hero" class="nav-link"><i class="fas fa-home fa-fw"></i> <span>Home</span></a></li>
-                 <li><a href="index.html#about" class="nav-link"><i class="fas fa-user fa-fw"></i> <span>About</span></a></li>
-                 {/* ... other links back to index.html sections ... */}
-                 <li><a href="blog.html" class="nav-link active"><i class="fas fa-book-open fa-fw"></i> <span>Blog</span></a></li>
-                 <li><a href="index.html#contact" class="nav-link"><i class="fas fa-envelope fa-fw"></i> <span>Contact</span></a></li>
-             </ul>
+            <ul>
+                <li><a href="index.html#hero" class="nav-link"><i class="fas fa-home fa-fw"></i> <span>Home</span></a></li>
+                <li><a href="index.html#about" class="nav-link"><i class="fas fa-user fa-fw"></i> <span>About</span></a></li>
+                <!-- Add other links back to index.html sections -->
+                <li><a href="blog.html" class="nav-link active"><i class="fas fa-book-open fa-fw"></i> <span>Blog</span></a></li>
+                <li><a href="index.html#contact" class="nav-link"><i class="fas fa-envelope fa-fw"></i> <span>Contact</span></a></li>
+            </ul>
         </nav>
+        <!-- Copyright Notice -->
+        <div class="sidebar-footer">
+            <p>&copy; <span id="copyright-year"></span> Chirchir.dev. All rights reserved.</p>
+        </div>
     </aside>
 
+    <!-- Main Content -->
     <main id="main-content" class="coming-soon-page">
         <div class="coming-soon-container" data-aos="fade-up">
-            <i class="fas fa-pencil-ruler fa-3x coming-soon-icon"></i> {/* Example icon */}
+            <!-- Example Icon -->
+            <i class="fas fa-pencil-ruler fa-3x coming-soon-icon"></i>
             <h1>Blog Coming Soon!</h1>
             <p>Exciting content is under construction. Stay tuned!</p>
             <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Go Back Home</a>
         </div>
     </main>
 
-     {/* Include for consistency */}
-     <footer id="bottom-nav" role="navigation" aria-label="Footer Navigation">
-        <div class="nav-item"> <a href="index.html#hero" aria-label="Home" data-tooltip="Home" class="nav-link"><i class="fas fa-home"></i></a></div>
-        <div class="nav-item"><a href="blog.html" aria-label="Blog" data-tooltip="Blog" class="nav-link active"><i class="fas fa-book-open"></i></a></div> {/* Mark as active */}
-        <div class="nav-item nav-item-center"><a href="#" target="_blank" aria-label="GitHub Profile" data-tooltip="GitHub"><i class="fab fa-github"></i></a></div> {/* Replace # */}
-        <div class="nav-item"><a href="#" target="_blank" aria-label="LinkedIn Profile" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a></div> {/* Replace # */}
-        <div class="nav-item"><a href="#" target="_blank" aria-label="X Profile" data-tooltip="X"><i class="fa-brands fa-x-twitter"></i></a></div> {/* Replace # */}
-        <div class="nav-item"><button id="dark-mode-toggle" aria-label="Toggle Theme" data-tooltip="Theme"><i class="fas fa-moon"></i></button></div>
-     </footer>
+    <!-- Footer Navigation -->
+    <footer id="bottom-nav" role="navigation" aria-label="Footer Navigation">
+        <!-- Home Link -->
+        <div class="nav-item">
+            <a href="index.html#hero" aria-label="Home" data-tooltip="Home" class="nav-link">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        <!-- Blog Link (Active) -->
+        <div class="nav-item">
+            <a href="blog.html" aria-label="Blog" data-tooltip="Blog" class="nav-link active">
+                <i class="fas fa-book-open"></i>
+            </a>
+        </div>
+        <!-- GitHub Link -->
+        <div class="nav-item nav-item-center">
+            <a href="#" target="_blank" aria-label="GitHub Profile" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- LinkedIn Link -->
+        <div class="nav-item">
+            <a href="#" target="_blank" aria-label="LinkedIn Profile" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <!-- X (Twitter) Link -->
+        <div class="nav-item">
+            <a href="#" target="_blank" aria-label="X Profile" data-tooltip="X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+        <!-- Dark Mode Toggle -->
+        <div class="nav-item">
+            <button id="dark-mode-toggle" aria-label="Toggle Theme" data-tooltip="Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </footer>
 
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
