@@ -52,7 +52,7 @@
    body:not(.preload) #preloader {
        opacity: 0;
        visibility: hidden;
-       pointer-events: none; /* Add this */
+       pointer-events: none;
    }
 
    img, picture, video, canvas, svg {
@@ -220,7 +220,7 @@
        max-width: 65ch; /* Improve readability */
    }
    section p {
-       margin-left: auto; /* Center paragraphs within sections if needed */
+       margin-left: auto;
        margin-right: auto;
    }
    section > p { /* Paragraph directly under section title */
@@ -242,7 +242,7 @@
        text-underline-offset: 3px;
    }
    a.nav-link:hover, a.nav-link:focus {
-       text-decoration: none; /* Remove underline for nav links */
+       text-decoration: none;
    }
 
 
@@ -360,7 +360,7 @@
        text-align: center;
        font-weight: 500;
        font-size: 0.9rem;
-       display: none; /* Hidden initially */
+       display: none;
        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
    }
    .form-status-message.visible {
@@ -376,7 +376,7 @@
        text-align: center;
    }
 
-   /* Netlify Honeypot */
+   /* Honeypot */
     .hidden {
         display: none;
     }
@@ -402,9 +402,8 @@
    /* --- Sections --- */
    .section {
        padding: clamp(60px, 10vh, 100px) 20px; /* Responsive vertical padding */
-       position: relative; /* For pseudo-elements or absolute children */
-       /* border-bottom: 1px solid var(--border-color); Remove if design doesn't need it */
-   }
+       position: relative; 
+    }
    .section:last-of-type {
        border-bottom: none;
    }
@@ -507,7 +506,7 @@
    /* Default state for bottom nav (centered in viewport) */
     #bottom-nav {
         /* Position is handled by JS */
-        position: fixed; /* Ensure it's fixed */
+        position: fixed; /* Fixed to bottom */
         bottom: 15px;
         /* Left and Transform set by JS */
     }
@@ -531,7 +530,7 @@
     transition: opacity 0.5s ease-out 0.5s, visibility 0.5s ease-out 0.5s; /* Reduced delay */
 }
 
-/* New Loader Styles */
+/* Loader Style */
 .loader {
     width: 96px;
     box-sizing: content-box;
@@ -574,15 +573,15 @@
 #sidebar h2 {
   display: flex;
   align-items: center;
-  gap: 8px; /* Adjust spacing as needed */
+  gap: 8px;
 }
 .sidebar-footer {
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px solid #ccc; /* Optional: Add a top border */
+  border-top: 1px solid #ccc; 
   text-align: center;
   font-size: 0.9rem;
-  color: #666; /* Adjust color as needed */
+  color: #666; 
 }
 
 .sidebar-footer p {
@@ -621,7 +620,7 @@
 
 
    /* --- Hero Section --- */
-   #hero { /* Renamed from .hero-section for consistency */
+   #hero { /* Hero section styles */
        background-color: var(--bg-main);
        min-height: 100vh;
        display: flex;
@@ -631,17 +630,27 @@
        position: relative;
        overflow: hidden;
    }
-   .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 3rem; max-width: 1200px; width: 100%; z-index: 2; }
-   .hero-text { flex: 1; max-width: 600px; }
+   .hero-content { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 3rem; 
+        max-width: 1200px; 
+        width: 100%; 
+        z-index: 2; 
+   }
+   .hero-text { 
+        flex: 1;
+        max-width: 600px; }
    .intro-text { font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.25rem; display: inline-block; /* Make it wrap content width + padding */
     background-color: var(--bg-dark-secondary); /* Use card background color for the tag */
-    /* Or try accent color: background-color: var(--accent-primary); */
     color: var(--text-light-primary); /* Use light text color */
-    padding: 8px 20px; /* Adjust vertical and horizontal padding */
-    border-radius: 50px; /* Large value for pill shape */
-    border: 1px solid var(--border-dark); /* Optional: subtle border */
-    margin-bottom: 1rem; /* Adjust spacing below the tag */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow */ }
+    padding: 8px 20px; 
+    border-radius: 50px; /* Large value to create pill shape */
+    border: 1px solid var(--border-dark); /* subtle border */
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
     /* Class for the emoji span */
 .waving-hand {
   animation-name: wave-animation;  /* Refers to the keyframes */
@@ -655,10 +664,9 @@
    .subtitle {
         font-size: 1.3rem;
         font-weight: 400;
-        /* color: var(--text-gradient); REMOVE static gradient if using dynamic colors */
         margin-bottom: 1.5rem;
-        min-height: 2em; /* Ensure space */
-        position: relative; /* Needed for pseudo-elements if used */
+        min-height: 2em; /* Ensures space */
+        position: relative; 
     }
 
     .typing-effect {
@@ -669,7 +677,7 @@
         animation: blink-caret var(--cursor-blink-rate, 0.75s) step-end infinite;
         white-space: nowrap;
         overflow: hidden;
-        display: inline-block; /* Or inline-flex if needed */
+        display: inline-block; 
         vertical-align: bottom;
         max-width: 100%;
         /* Transition for color change - can also be set in JS */
@@ -679,8 +687,8 @@
    .contact-info p { display: flex; align-items: center; gap: 10px; color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem; max-width: none; margin-left: 0;}
    .contact-info i { color: var(--accent-primary); font-size: 1.1em; width: 20px; text-align: center; }
    .contact-info a.contact-link {
-    color: var(--text-secondary); /* Inherit color or set specific */
-    text-decoration: none; /* Remove underline */
+    color: var(--text-secondary); 
+    text-decoration: none; 
     transition: color var(--transition-speed) ease;
     }
    .contact-info a.contact-link:hover,
@@ -695,8 +703,8 @@
    .hero-image-container { flex-basis: 45%; position: relative; display: flex; justify-content: center; align-items: center; }
    .hero-image-backdrop { position: absolute; inset: 0; z-index: 1; overflow:hidden; }
    .hero-main-image { width: clamp(250px, 80%, 400px); aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover; /*border: 6px solid var(--bg-card);*/ box-shadow: var(--shadow-lg); z-index: 3; position: relative; }
-   .bg-circle { position: absolute; border-radius: 50%; opacity: 1; /* Reduced opacity */
-     filter: none; /* Increased blur */ animation: float 10s ease-in-out infinite alternate; z-index:2; } /* Slower animation */
+   .bg-circle { position: absolute; border-radius: 50%; opacity: 1; 
+     filter: none; animation: float 10s ease-in-out infinite alternate; z-index:2; } /* Slower animation */
    .circle-1 {
     background-color: #3b82f6; /* Blue */
     width: 180px; height: 180px;
@@ -732,7 +740,7 @@
    .about-image img { border-radius: 50%; border: 4px solid var(--border-color); }
    .about-text { flex: 1; }
    .about-text.content-card { /* Apply card style directly */ }
-   .about-text h3 { color: var(--text-primary); margin-bottom: 1rem; } /* Adjust heading style if needed */
+   .about-text h3 { color: var(--text-primary); margin-bottom: 1rem; } 
 
 
    /* --- Timeline (Work/Edu) --- */
@@ -744,7 +752,7 @@
    .timeline-marker { position: absolute; left: 0; top: 0; width: 110px; display: flex; justify-content: center; align-items: flex-start; z-index: 1; }
    .timeline-marker::after { content: ''; position: absolute; left: 54px; top: 15px; width: 12px; height: 12px; background-color: var(--accent-primary); border: 3px solid var(--bg-main); border-radius: 50%; z-index: 2; }
    .timeline-logo { width: 70px; height: 70px; background-color: var(--bg-card); border-radius: 15px; border: 1px solid var(--border-color); overflow: hidden; display: flex; justify-content: center; align-items: center; box-shadow: var(--shadow-sm); }
-   .timeline-logo img { width: 100%; height: 100%; object-fit: contain; /* Filter potentially needed for dark mode */ /* filter: var(--logo-filter); */ }
+   .timeline-logo img { width: 100%; height: 100%; object-fit: contain; }
    .timeline-item-content { flex-grow: 1; padding-top: 5px; }
    .timeline-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; gap: 15px; }
    .info-main { flex-grow: 1; }
@@ -755,18 +763,18 @@
    .details-toggle:hover, .details-toggle:focus, .school-link:hover, .school-link:focus { color: var(--accent-primary); text-decoration: none;}
    .details-toggle i, .school-link i { display: block; transition: transform 0.3s ease-out; }
    .details-toggle[aria-expanded="true"] i { transform: rotate(90deg); }
-   .timeline-details { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, margin-top 0.4s ease-out, opacity 0.3s ease-out; opacity: 0; margin-top: 0; padding-left: 15px; border-left: 3px solid var(--accent-primary); } /* Increased padding/border */
-   .timeline-details.open { max-height: 800px; opacity: 1; margin-top: 20px; } /* Increased margin */
+   .timeline-details { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, margin-top 0.4s ease-out, opacity 0.3s ease-out; opacity: 0; margin-top: 0; padding-left: 15px; border-left: 3px solid var(--accent-primary); } 
+   .timeline-details.open { max-height: 800px; opacity: 1; margin-top: 20px; } /* Adjusted max-height for smoother transition */
    .timeline-details h5 { font-size: 0.9rem; font-weight: 600; color: var(--accent-primary); margin-top: 1rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px; }
    .timeline-details h5:first-child { margin-top: 0; }
-   .timeline-details ul { list-style: disc; padding-left: 25px; margin-bottom: 1rem; } /* Increased padding */
+   .timeline-details ul { list-style: disc; padding-left: 25px; margin-bottom: 1rem; } 
    .timeline-details ul li { margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; }
    .timeline-notes { padding-left: 15px; margin-top: -5px; } /* Adjusted margin */
    .timeline-notes p { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; max-width: none; margin-left: 0; }
 
 
    /* --- Skills Section --- */
-   .skills-section { background-color: var(--bg-dark-primary); position: relative; overflow: hidden; color: var(--text-light-primary); padding-bottom: clamp(80px, 12vh, 120px); } /* Extra bottom padding */}
+   .skills-section { background-color: var(--bg-dark-primary); position: relative; overflow: hidden; color: var(--text-light-primary); padding-bottom: clamp(80px, 12vh, 120px); } /* Extra bottom padding */
    .skills-section::before { content: ''; position: absolute; inset: 0; width: 100%; height: 100%; background-image: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px); background-size: 40px 40px; /* Adjust size */ opacity: 0.08; z-index: 0; animation: subtleShift 20s infinite linear;} /* Subtle movement */
    .skills-section > *, .skill-domain { position: relative; z-index: 1; }
    .skills-section h2 { color: var(--text-light-primary); text-align: center; margin-bottom: 3rem; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: clamp(1.6rem, 4vw, 2rem); }
@@ -778,10 +786,8 @@
    .skill-items-grid { flex-grow: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
    .skill-item { display: flex; align-items: center; gap: 12px; padding: 12px 15px; background-color: color-mix(in srgb, var(--bg-light-secondary) 5%, transparent); /* Lighter background */ border-radius: var(--button-border-radius); border: 1px solid var(--border-dark); /* Use dark border */ transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease, border-color var(--transition-speed) ease; }
    .skill-item:hover, .skill-item:focus { background-color: color-mix(in srgb, var(--bg-light-secondary) 15%, transparent); border-color: var(--accent-primary); transform: translateY(-3px); outline: none; } /* Added focus style */
-   .skill-item img { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; /* Logos are likely light, don't filter by default */ }
+   .skill-item img { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0;  }
    .skill-item span { font-size: 0.95rem; font-weight: 500; color: var(--text-light-primary); flex-grow: 1; }
-   /* Add specific background if needed for certain logos */
-   /* .skill-item img[alt*="JavaScript"] { background-color: black; border-radius: 3px; padding: 2px;} */
 
 
    /* --- Projects Section --- */
@@ -880,14 +886,7 @@
   min-width: 300px; /* Minimum width before wrapping */
 }
 
-/* Adjust existing form styles if needed */
-#contact-form {
-   /* Remove max-width and margin: 0 auto; if previously applied directly */
-   /* background-color: transparent; Removed if container has bg */
-   /* border: none; Removed if container has border */
-   /* padding: 0; Removed if container has padding */
-   /* box-shadow: none; Removed if container has shadow */
-}
+
 
 .form-group label {
   display: block;
@@ -931,12 +930,8 @@
   width: 100%; /* Make button full width of column */
   padding: 12px 20px; /* Adjust padding */
   font-size: 1rem;
-  /* Ensure it uses primary button colors from variables */
-  /* background-color: var(--primary-button-bg); */
-  /* color: var(--primary-button-text); */
 }
 
-/* Optional: Add right margin to text in button, left margin to icon */
 #contact-submit i {
   margin-left: 8px;
   font-size: 0.9em; /* Slightly smaller icon */

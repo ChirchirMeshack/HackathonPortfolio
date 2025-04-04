@@ -8,7 +8,7 @@
  * - Active Navigation Link Highlighting on Scroll
  * - Customizable Typing Effect Animation
  * - Timeline Details Toggle
- * - Contact Form Submission Feedback (Frontend - adaptable for Netlify)
+ * - Contact Form Submission Feedback
  * - Scroll Animation Initialization (AOS)
  * - Screen Size Checks for Layout Adjustments
  */

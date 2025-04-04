@@ -1,12 +1,17 @@
+<!-- Document Structure -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Language declaration for accessibility -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">  <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive viewport -->
+
+    <!-- SEO Meta Tags -->
     <title>Kipchirchir Kimoloi</title>
     <meta name="description" content="Personal portfolio website showcasing projects, skills, and experience of Meshack Kipchirchir Kimoloi.">
     <meta name="keywords" content="Meshack Kipchirchir Kimoloi, Portfolio, Web Developer, Frontend, Backend, Next, AWS">
 
+    <!-- Resource Links -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -14,19 +19,25 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="preload"> <!-- Initial class for preloader -->
-
+     <!-- Main content sections -->
+      <!-- Preloader Section -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
 
-    <div id="overlay"></div>
+    <div id="overlay"></div>  <!-- Overlay for modal windows and loading states -->
 
+    <!-- Sidebar Navigation -->
     <aside id="sidebar">
+         <!-- Brand Logo and Name -->
         <h2>
+
             <img src="images/favicon.ico" alt="Chirchir.dev Logo" width="24" height="24">
             Chirchir.dev
         </h2>
+        <!-- Main Navigation Menu -->
         <nav aria-label="Main Navigation">
+            <!-- Navigation links with icons for better visual hierarchy -->
             <ul>
                 <li><a href="#hero" class="nav-link"><i class="fas fa-home fa-fw"></i> <span>Home</span></a></li>
                 <li><a href="#about" class="nav-link"><i class="fas fa-user fa-fw"></i> <span>About</span></a></li>
@@ -46,20 +57,24 @@
         </div>
     </aside>
 
+    <!--Mobile Menu Toggle (#menu-toggle) - Responsive menu button-->
     <button id="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="sidebar">
         <i class="fas fa-bars"></i>
     </button>
 
     <main id="main-content">
 
+        <!-- Hero Section - Main landing area -->
         <section id="hero" class="section hero-section" aria-labelledby="hero-heading">
             <div class="hero-content">
+                <!-- Personal Introduction -->
                 <div class="hero-text" data-aos="fade-right">
                     <p class="intro-text">Hey! <span class="waving-hand">👋</span> I'm</p>
                     <h1 id="hero-heading" class="name-gradient">Kipchirchir Meshack</h1>
-                    <!-- Updated Subtitle structure for Typing Effect -->
+                   <!-- Dynamic typing effect for roles -->
                     <p class="subtitle">I'm a <span class="typing-effect" data-words='["Full-Stack Developer", "Problem-solver", "Tech Enthusiast", "Cloud-Engineer", "DevOps Engineer", "Lifelong Learner"]'></span></p>
 
+                     <!-- Contact Information -->
                     <div class="contact-info">
                         <p>
                             <i class="fas fa-phone-alt fa-fw"></i>
@@ -75,8 +90,9 @@
                         </p>
                     </div>
 
+                    <!-- Call-to-Action Buttons -->
                     <div class="cta-buttons">
-                        <!-- Update href to your actual resume file -->
+                        <!-- href to my resume file -->
                         <a href="assets/Mr.Meshack Kimoloi Cv.pdf" target="_blank" class="btn btn-primary">
                             <i class="fas fa-download"></i> Download Cv
                         </a>
@@ -85,8 +101,8 @@
                         </a>
                     </div>
 
+                    <!-- Social Media Links -->
                     <div class="hero-social-links">
-                         <!-- Replace # with your actual profile URLs -->
                         <a href="https://www.linkedin.com/in/meshack-kipchirchir-5201252a9/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/ChirchirMeshack" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         <a href="https://x.com/chirchir69" target="_blank" aria-label="X (Twitter) Profile"><i class="fa-brands fa-x-twitter"></i></a>
@@ -94,6 +110,7 @@
                 </div>
 
                 <!-- Right Column -->
+                 <!-- Profile Image with Background Effects -->
                 <div class="hero-image-container" data-aos="fade-left" data-aos-delay="200">
                     <div class="hero-image-backdrop">
                         <!-- Background Abstract Circles -->
@@ -103,7 +120,6 @@
                         <span class="bg-circle circle-4"></span>
                         <span class="bg-circle circle-5"></span>
                     </div>
-                    <!-- TODO: Replace with actual photo -->
                     <img src="images/hero-image.jpg" alt="Kipchirchir" class="hero-main-image" width="400" height="400" loading="eager">
                 </div>
             </div>
@@ -114,6 +130,7 @@
             </a>
         </section>
 
+        <!-- About Section - Introduction to personal background -->
         <section id="about" class="section" aria-labelledby="about-heading" data-aos="fade-up">
             <h2 id="about-heading">About Me</h2>
             <div class="about-container">
@@ -129,6 +146,7 @@
             </div>
         </section>
 
+        <!-- Experience Section - Work and Educational Background -->
         <section id="experience" class="section timeline-section" aria-labelledby="experience-heading" data-aos="fade-up">
             <h2 id="experience-heading">Work Experience</h2>
             <div class="timeline modern-timeline">
@@ -136,7 +154,7 @@
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-marker">
                         <div class="timeline-logo">
-                            <!-- company logos -->
+                            <!-- company logo -->
                             <img src="images/company-logo-1.png" alt="Company 1 Logo" loading="lazy" width="70" height="70">
                         </div>
                     </div>
@@ -205,7 +223,6 @@
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-marker">
                          <div class="timeline-logo">
-                            <!-- TODOs Replace with school logo -->
                             <img src="images/school-logo-1.png" alt="School 1 Logo" loading="lazy" width="70" height="70">
                         </div>
                     </div>
@@ -275,6 +292,7 @@
             </div>
         </section>
 
+        <!-- Skills Section - Technical Skills and Tools -->
         <section id="skills" class="section skills-section" aria-labelledby="skills-heading" data-aos="fade-up">
             <h2 id="skills-heading"><i class="fas fa-layer-group"></i> MY STACK</h2>
 
@@ -284,7 +302,6 @@
                     <h3>FRONTEND</h3>
                 </div>
                 <div class="skill-items-grid">
-                <!-- Add skill items - remember to add logos to images/logos/ -->
                     <div class="skill-item">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                         alt="JavaScript Logo" loading="lazy" width="28" height="28"/><span>JavaScript</span>
